@@ -1,0 +1,28 @@
+{
+  "name": "ai-quality-engineering-platform",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AI-powered Quality Engineering platform for automated testing, quality analysis, risk assessment, and release readiness.",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:report": "playwright show-report",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^22.20.2",
+    "dotenv": "^18.0.1",
+    "eslint": "^10.11.0",
+    "prettier": "^3.9.8",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.70.0"
+  },
+  "dependencies": {
+    "zod": "^4.6.5"
+  }
+}
