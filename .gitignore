@@ -31,3 +31,16 @@ Thumbs.db
 /blob-report/
 /playwright/.cache/
 /playwright/.auth/
+juiceshop.sqlite
+
+# Local database
+juiceshop-restored.sqlite
+
+# Generated security scan output
+semgrep-results.json
+
+# Generated reports
+reports/
+
+# Next.js generated files
+dashboard/.next/

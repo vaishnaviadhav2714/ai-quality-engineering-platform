@@ -14,3 +14,12 @@ export const productSearchResponseSchema = z.object({
 export type Product = z.infer<typeof productSchema>;
 
 export type ProductSearchResponse = z.infer<typeof productSearchResponseSchema>;
+export const productDetailsResponseSchema = z.object({
+  status: z.string(),
+  data: productSchema.extend({
+    description: z.string(),
+    deluxePrice: z.number(),
+    image: z.string(),
+    createdAt: z.string(),
+  }),
+});

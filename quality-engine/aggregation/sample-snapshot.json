@@ -1,0 +1,49 @@
+{
+  "application": "OWASP Juice Shop",
+  "timestamp": "2026-10-04T15:40:28.103Z",
+  "metrics": [
+    {
+      "area": "automation",
+      "tool": "Playwright",
+      "status": "passed",
+      "summary": "All automated tests passed.",
+      "score": 100
+    },
+    {
+      "area": "security",
+      "tool": "OWASP ZAP",
+      "status": "warning",
+      "summary": "8 warning-level findings detected.",
+      "score": 70
+    },
+    {
+      "area": "performance",
+      "tool": "k6",
+      "status": "passed",
+      "summary": "0% HTTP request failures.",
+      "score": 95
+    },
+    {
+      "area": "accessibility",
+      "tool": "axe-core",
+      "status": "failed",
+      "summary": "One critical accessibility violation detected.",
+      "score": 0
+    }
+  ],
+  "overallStatus": "failed",
+  "overallScore": 66,
+  "intelligence": {
+    "summary": "Accessibility scan detected a critical violation: a text input field lacks an associated label on the Juice Shop home page.",
+    "keyRisks": [
+      "Critical violation: form element does not have an associated label",
+      "Affected element: text input field",
+      "axe-core rule: label"
+    ],
+    "recommendedActions": [
+      "Add an accessible label to the text input field",
+      "Verify label alignment and order for improved accessibility"
+    ],
+    "confidence": "medium"
+  }
+}

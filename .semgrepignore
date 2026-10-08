@@ -1,0 +1,5 @@
+reports/
+test-results/
+playwright-report/
+semgrep-result                        s.json
+node_modules/-

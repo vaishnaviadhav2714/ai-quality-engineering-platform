@@ -14,4 +14,8 @@ export class ProductApiClient {
   async getProductById(productId: number) {
     return this.request.get(`/api/Products/${productId}`);
   }
+
+  async searchProductsWithoutQuery() {
+    return this.request.get('/rest/products/search');
+  }
 }
